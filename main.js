@@ -19,3 +19,11 @@ app.on("ready", function() {
     })
   );
 });
+
+// Create menu template
+
+const mainMenuTemplate = [
+  {
+    label: "File"
+  }
+];
