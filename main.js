@@ -29,6 +29,20 @@ app.on("ready", function() {
 
 const mainMenuTemplate = [
   {
-    label: "File"
+    label: "File",
+    submenu: [
+      {
+        label: "Add Item"
+      },
+      {
+        label: "Clear items"
+      },
+      {
+        label: "Quit",
+        click() {
+          app.quit();
+        }
+      }
+    ]
   }
 ];
