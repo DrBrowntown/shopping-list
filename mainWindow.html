@@ -22,6 +22,7 @@
 
       // Add item
       ipcRenderer.on("item:add", function(e, item) {
+        ul.className = "collection";
         const li = document.createElement("li");
         const itemText = document.createTextNode(item);
         li.appendChild(itemText);
