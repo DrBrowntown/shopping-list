@@ -19,6 +19,10 @@ app.on("ready", function() {
       slashes: true
     })
   );
+  // Quit app when closed
+  mainWindow.on("closed", function() {
+    app.quit();
+  });
 
   // Build menu from template
   const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
